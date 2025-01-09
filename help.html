@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help - Tour237</title>
+  <link rel="stylesheet" href="help.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Help Center - Tour237</h1>
+  </div>
+  <div class="container">
+    <div class="help-section">
+      <h2>Getting Started</h2>
+      <p>Welcome to Tour237! Explore the rich cultural heritage and breathtaking landscapes of Cameroon with us. To begin your journey, navigate through our website to find tours that interest you.</p>
+    </div>
+    <div class="help-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <h3>How do I book a tour?</h3>
+          <p>To book a tour, browse our available tours, select the one you prefer, and click on the 'Book Now' button. Follow the on-screen instructions to complete your booking.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What payment methods are accepted?</h3>
+          <p>We accept various payment methods, including credit/debit cards and mobile money. All transactions are secure and encrypted.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I customize my travel package?</h3>
+          <p>Yes, we offer customized travel packages to suit your interests. Please contact our support team to discuss your preferences.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What is your cancellation policy?</h3>
+          <p>Our cancellation policy varies depending on the tour. Please refer to the specific tour details for more information or contact our support team.</p>
+        </div>
+      </div>
+    </div>
+    <div class="help-section">
+      <h2>Contact Support</h2>
+      <p>If you have any further questions or need assistance, feel free to reach out to our support team at <a href="mailto:support@tour237.com">support@tour237.com</a>.</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; PathfinderLabs. All rights reserved.</p>
+  </div>
+  <script>
+    document.querySelectorAll('.faq-item h3').forEach(item => {
+      item.addEventListener('click', () => {
+        const content = item.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
